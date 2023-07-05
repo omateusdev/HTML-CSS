@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Links</title>
+</head>
+<body>
+   <h1>Usando links externos</h1> 
+   <p>Você pode acessar o <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório do Guanabara</a> </p> 
+   
+   <!--Aqui o foi utilizado o link do material de estudos. EXPLICANDO A TAG... A Tag a significa âncora, href significa que vc coloca o link externo para qual vc quer levar -->
+
+   <p>Façamos com <a href="https://www.youtube.com/">youtube</a>, porém sem usar target e rel</p> 
+   
+   <!--Quando se usa Target e Rel, você especifica que o link deve ser aberto em uma outra aba, não na aba que vc tem seu site. Pois isso pode fazer com que as pessoas saiam do seu site e não retornem  -->
+
+   <h2>Links internos</h2>
+   <p>Ir para nossa <a href="pag002.html" rel="next">segunda página</a> </p> 
+   
+   <!--Utilizando rel, você indica para o google onde está sua próxima página --> <!-- a pag002 foi criada da mesma forma que o arquivo index, por estar na mesma pasta fica mais fácil de colocala no href. funciona igual as imagens !-->
+
+   <h2>Você também pode conferir nossas noticias</h2>
+<p>clique aqui para nossa página de <a href="noticias/pag003.html" target="_self">noticias</a>
+    
+    <!--Para selecionar arquivos dentro da pasta, usar Crtl + space se não não irá dar certo-->
+</p>
+    
+
+
+<h1>Links para downloads </h1>
+<ul>
+     <li> <a href="livro/ELE VEM .pdf" download="ELE VEM .pdf" type="application/pdf">Baixar livro em PDF</a>
+
+    <li><a href="livro/elevemlivro.zip" download="elevemlivro.zip" type="application/zip">Baixar livro em PDF zipado</a></li>
+
+</ul>
+
+
+
+
+</body>
+</html>

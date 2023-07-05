@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover </title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, Sans-serif;
+        } /*Shorthand pra fontes*/
+        div > p {
+            display: none;
+        }
+            /* A simbologia de > significa que p é filho dessa div */
+        div:hover > p {
+            display: block; /* Display seleciona block para mostrar e none para não mostrar a informação */
+            background-color: aquamarine;
+            color: blue;
+            width: 300px;    
+        }
+
+        div:hover{
+            color: rgb(253, 8, 8);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando o Hover</h1>
+    <p>Passe o mouse sobre a tela a baixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

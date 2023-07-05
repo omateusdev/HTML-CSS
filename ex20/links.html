@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang= "pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+       /* # = id    
+          . = class
+          : = pseudo-class
+          :: = pseudo-element
+          >  = children*/
+       body{
+            background-color: rgb(169, 206, 194);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(219, 21, 21);
+            text-decoration: none; /*Esse Text decortion define se tem sublinhado ou não*/
+            font-weight: bold; /*Fazer ficar em negrito*/
+        }
+
+        a:visited{
+             color: rgb(0, 71, 133);
+        }
+        a:hover {
+             text-decoration: underline; /* Quando pasar o mouse por cima ele sublinha o texto*/
+        } 
+        a:active {
+            color: yellow; /*Gera uma ação para o link ficar amarelo quando clicar em cima dele, quase imperceptível */
+        }
+        a::after {
+            content: '[link]';
+            color: rgb(172, 114, 114);
+        }
+        
+        .especial:hover{
+            background-color: black;
+        }
+   </style>
+
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Repositório Git</a> </li> <!--RELEMBRANDO Target="Blank" usa se para que o link abra em outra página-->
+    <li><a href="https://www.cursoemvideo.com/cursos/">Site Curso em Video</a> </li>
+    <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22&ab_channel=CursoemV%C3%ADdeo" class="especial">Canal Youtube</a> </li>
+</body>
+</html>

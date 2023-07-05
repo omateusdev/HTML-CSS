@@ -1,0 +1,44 @@
+@charset "UTF-8";
+    /* 
+    Oque é ID em HTML, em CSS é #
+    Oque é class em HTML,  em CSS é .
+    */
+   
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Satisfy&family=Work+Sans&display=swap');
+
+    body{
+    background-color: rgb(205, 255, 203);
+    font-family: 'Work Sans'; 
+}
+
+    h1{
+    color: rgb(31, 134, 27);
+}
+    
+    /*
+    Sempre escrever o ID em minúsculas para evitar que essa ferramenta não funcione.
+    */
+    #principal {
+    text-align: center;
+    background-color: rgb(85, 255, 43);
+    }
+
+    h2 {
+    color: rgb(9, 43, 8);
+    }
+
+    .basico{
+        background-color: aquamarine;
+        font-weight: 500;
+    }
+    .intermdeiario{
+        background-color: rgb(9, 221, 150)
+    }
+    .avancado{
+        background-color: rgb(7, 78, 54)
+    }
+    /* É possível usar dois class no mesmo elemento
+    Ex: <h2 class="avancado"
+        <h2 class="avancado intermediario"
+        e também é poss´vel usar id junto com o class, mas lembre se o Id sempre se sobressai 
+        

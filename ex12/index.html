@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando vídeos</title>
+</head>
+<body>
+   <h1>Inserindo vídeos hospedados localmente</h1>
+   <p>Este vídeo está hospedado no meu prórprio servidor</p>
+
+   <video width="560" poster="midia/Sem título.png" controls autoplay loop> 
+    
+    <source src="midia/meu video 640.mp4" type="vído/mp4">
+    <source src="midia/meuvideo (video-converter.com).mp4" type="video/mp4">
+    <source src="midia/meuvideo.mp4" type="video/mp4">
+    <!--Nesse exemplo os vídeos estão nos mesmos formatos pois não consegui achar um conversor, mas o certo é utilizar um formato em cada linha dessas -->
+   </video>
+    <!--Alguns navegadores não rodam alguns tipos de formato, exemplo: Onavegador SAFARI (muito usado no iphone) não roda arquivos OGV e isso vale pra outros tipos de navegadores com outros tipos de formatos-->
+
+<h1>Incorporando vídeos do Youtube</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TCeyIwFGkYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--Incorporar vídeos do Youtube é uma estratégia para economizar dados de navegação, na hospedagem local em um site com 6, 7 ou mais vídeos, a quantidade de gb que seu cliente precisará pagar é muito alta. Por isso pegamos videos incorporados para usar a hospedagem de outro site -->
+
+<!--Os vídeos incorporados do youtube, podem ser encontrados lá, iso significa que não pode ser um problema pro seu cliente, o vídeo ser visto gratuitamente lá -->
+</body>
+</html>

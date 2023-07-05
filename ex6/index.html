@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="pt-br"></html>
+    
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="Heart-icon.ico" type="image/x-icon">
+    
+    <style>
+     mark {background-color: rgb(120, 120, 189);}
+
+    </style> <!-- Isso é utilizado para que todos os Marks sem core definidas fiquei iguais, se você deixar 1 mark com cor e depois usar essa forma acima, o que estava colorido não vai mudar, só os que estavam sem cores-->
+    
+
+    <title>Formatações de texto</title>
+    
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag b NÃO SEMÂNTICA</p>
+    <P>Nessa frase tenho um termo em destaque usando a tag <strong>Termo em destaque</strong> desse jeito é mais semântico</P> <!--Um termo em destaque é melhor se usar o strong, engrito é só uma forma, strong tem SENTIDO-->
+
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em Itálico</i> usando a tag i, não semântico </p> <!-- aperte Ctrl+Shift+P Surgirá a barra onde você escolhe o atalho como: envelopamento. Aperte enter a tag que vc deseja que faça o envelopamento. -->
+   
+    <p>Nesta frase temos um termo em ênfase usando a tag EM (SEMÂNTICA)</p> <!-- Strong e Em são tags novas e que são melhores validadas para a aplicação, por enquanto. Pode ser que um dia mude. -->
+    
+<h2>Marcação/Grifar texto</h2>
+
+    <p>Para marcar um texto basta utilizar a tag <mark>texto grifado</mark> </p>
+    
+    <p>Caso você queira outro texto grifado de uma outra cor, use <mark> style="background-color: brown;"> Marcando texto em outra cor</mark> </p> <!-- Adicionar tag style e escolher o modelo na janelça de seleção que aparece. Background color é a cor do marca texto, color cor das letras.-->
+
+    <h2>Texto Grande/Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> </p> <!--A tag big está obsoleta porque é formatação, pode ser feita no css, nesse caso, é desnecessário no html-->
+    
+    <h2>Texto deletado</h2>
+   
+    <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido mas não considerado</p>
+    
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado mais tarde</p>
+    <p>Ou podemos usar a tag u <u>Que não é SEMÂNTICA</u></p>
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+
+<h2>Texto subscrito</h2>
+<p>Para inserir coisas como H<sub>2</sub>O</p>
+
+
+
+
+</body>
+</html>

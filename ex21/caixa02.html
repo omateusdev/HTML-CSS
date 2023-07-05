@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(116, 113, 111);
+            margin: 0px;
+        }
+        header{
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+        }
+        nav{
+            background-color: darkgray;
+            padding: 4px;
+            box-shadow: 2px 2px 4px 1px black;
+            /*Desloc. Horizontal , Desloc. Vertical, Espalhamento, tamanho, Cor. Sempre colocar 1 em tds e black como cor, em seguida ajustar no dev tools e copiar os parâmetros de lá. Colocndo inset antes das medidas ele faz a sombra pra dentro da caixa*/
+            
+            /*No DevTools com nav selecionado clique nos 3 pontinhos e clique em Add box shadow (no meu navegador não funcionou)*/
+        }
+        nav > a {
+            text-decoration: underline;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            text-decoration: none;
+        }
+        
+        main{
+            background-color: rgb(141, 255, 217);
+            padding: 10px;
+            margin: 10px;
+           border-radius: 20px;
+           /* border-top-left-radius: 35px;
+             border-top-right-radius: 35px;
+             border-bottom-right-radius: 35px;
+             border-bottom-left-radius: 35px caso queira mexer cada um separadamente  */
+         }
+         article > h2{
+            text-align: center;
+         }
+
+         article > h2:hover{
+            text-decoration: underline;
+            color: coral;
+         }
+        section{
+            background-color: darkgray;
+            border-radius: 10px;
+        }  
+        #noticias{
+            background-color: rgba(169, 169, 169, 0.863);
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }       
+         footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 25px;
+            margin: 0px;
+         }
+         /*No site esse footer não ficou com 1px de padding.
+         Isso acontece porque o site em si coloca uma margem de 16 automaticamente, resolvemos isso fazendo o seguinte: */
+         footer > p{
+            margin: 0px;
+         }
+         div#bola{
+            margin:auto; /*centraliza*/
+            margin-top: 20px; /*estava colado na div de cima*/
+            background-color: white;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--tag Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav> <!--nav colocar links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteudo principal-->
+        <section id="noticias"> <!--seção-->
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias dolore adipisci alias nihil, quibusdam nisi sed iste similique vel reprehenderit voluptas totam, praesentium vero nam facilis eveniet sapiente voluptatibus vitae!</p>
+            </article>
+        </section>
+            <section id="assuntos">
+                <article>
+                    <h2>Fale aqui</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, a possimus rem voluptate, nisi culpa nostrum aperiam dolor, quos alias quidem fugiat? Non reprehenderit pariatur quo possimus saepe, ab delectus.</p>
+                        <aside>Escrito por mim</aside> <!--Periférico ao artigo tipo legenda de foto de Noticiario-->
+                </article>
+                <article>
+                    <h2>Fique sabendo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias amet nihil dolor atque! Expedita laudantium cum ab sed non eaque neque ad, sapiente natus hic cumque animi, eos saepe ut!</p>
+                </article>
+            </section>
+    
+        </main>
+        <footer>
+        <p>Desenvolvido por Mart3</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
